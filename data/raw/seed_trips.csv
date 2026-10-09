@@ -1,0 +1,6 @@
+trip_id,trip_name,leg_no,flight,carrier,origin,dest,date,dep,arr,confirmation
+dealrun-ord-lax,Deal Run: Chicago to LA,1,UA 1522,UA,BOS,ORD,2026-10-20,07:00,08:45,DKL9M2
+dealrun-ord-lax,Deal Run: Chicago to LA,2,AA 1254,AA,ORD,LAX,2026-10-20,09:30,11:40,DKL9M2
+allhands-atl-mia,All-Hands: Atlanta to New York,1,DL 1023,DL,ATL,MIA,2026-10-21,08:00,10:05,QR7X1T
+allhands-atl-mia,All-Hands: Atlanta to New York,2,DL 2187,DL,MIA,JFK,2026-10-21,11:30,14:05,QR7X1T
+partner-sea-sfo,Partner Visit: Seattle,1,AS 402,AS,SEA,SFO,2026-10-22,06:30,08:45,M4Z8QW
