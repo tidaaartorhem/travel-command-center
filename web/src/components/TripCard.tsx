@@ -5,7 +5,14 @@ export function TripCard({ trip, onClick, active }: {
   trip: ScoredTrip; onClick: () => void; active: boolean;
 }) {
   return (
-    <div className={`card trip-card${active ? ' active' : ''}`} onClick={onClick}>
+    <div
+      className={`card trip-card${active ? ' active' : ''}`}
+      onClick={onClick}
+      role="button"
+      tabIndex={0}
+      onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onClick(); } }}
+      aria-label={`Show trip detail: ${trip.name}`}
+    >
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 10 }}>
         <span className={`band ${trip.trip_band}`}>{trip.trip_band}</span>
         <span className="sub mono">{fmtDate(trip.legs[0].date)}</span>
